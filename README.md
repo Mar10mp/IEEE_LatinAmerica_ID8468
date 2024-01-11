@@ -1,2 +1,16 @@
 # IEEE_LatinAmerica_ID8468
-Steps and codes for application of fractional order controller 
+![GraphicalAbstract](https://github.com/GerPS0/IEEE_LatinAmerica_ID8468/assets/108953866/53410559-b1f5-47c6-acd6-ece8fdedcb40)
+*.........................................................................................*
+*....................................IMPORTANT NOTES......................................*
+*.........................................................................................*
+
+*.........................................................................................*
+*........................THIS FOLDER CONTAIN THE FOLLOWING FILES..........................*
+*.........................................................................................*		
+			A. FOLDER WITH MATLAB FILES
+			B. INSTRUCTIONS TO DESIGN THE FOPID
+			C. INSTRUCTIONS TO EXECUTE A CORRECT TEST OF THE FOPID
+			D. PSEUDO CODE TO HELP THE CODING THE FOPID IN A MICROCONTROLLER
+			E. LIST OF MATERIAL AND EQUIMENT 
+*.........................................................................................*
+*.........................................................................................*

@@ -1,16 +1,16 @@
 # IEEE_LatinAmerica_ID8468
 ![GraphicalAbstract](https://github.com/GerPS0/IEEE_LatinAmerica_ID8468/assets/108953866/53410559-b1f5-47c6-acd6-ece8fdedcb40)
-*...............................................................................................................................................................................................................................................................*
-*.............................................................................................IMPORTANT NOTES...................................................................................................................................................*
-*.........................................................................................*
 
-*.........................................................................................*
-*........................THIS FOLDER CONTAIN THE FOLLOWING FILES..........................*
-*.........................................................................................*		
-			A. FOLDER WITH MATLAB FILES
-			B. INSTRUCTIONS TO DESIGN THE FOPID
-			C. INSTRUCTIONS TO EXECUTE A CORRECT TEST OF THE FOPID
-			D. PSEUDO CODE TO HELP THE CODING THE FOPID IN A MICROCONTROLLER
-			E. LIST OF MATERIAL AND EQUIMENT 
-*.........................................................................................*
-*.........................................................................................*
+# IMPORTANT NOTES
+
+THE FOLLOWING DOCUMENTATION IS A HELP TO EXECUTE AND PROBE THE RESULT OF THE IEEE LATIN AMERICA PAPER CALLED "Fractional-Order Control for Voltage Regulation in Bidirectional Converters An Experimental Study" WITH ID 8468
+
+## MATLAB FILES
+	a. Boost aproximation.m
+## INSTRUCTIONS TO DESIGN THE FOPID
+## INSTRUCTIONS TO EXECUTE A CORRECT TEST OF THE FOPID
+## PSEUDO CODE TO HELP THE CODING THE FOPID IN A MICROCONTROLLER
+## LIST OF MATERIAL AND EQUIMENT 
+
+
+

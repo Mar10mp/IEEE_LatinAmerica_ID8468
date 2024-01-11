@@ -6,10 +6,10 @@
 THE FOLLOWING DOCUMENTATION IS A HELP TO EXECUTE AND PROBE THE RESULT OF THE IEEE LATIN AMERICA PAPER CALLED "Fractional-Order Control for Voltage Regulation in Bidirectional Converters An Experimental Study" WITH ID 8468
 
 ## MATLAB FILES
-	a. Boost_aproximation.m Mat function with the code to generate the FOPID and fractional aproximation of Boost converter.
- 	b. Buck_aproximation.m Mat function with the code to generate the FOPID and fractional aproximation of Buck converter.
-  	c. Main_function.m Main script to set the parameters of each converter and escecute both function. Note: the parameters can be modified by user
-   	d. Variables global variables used in each Mat function.
+1. [Boost_aproximation.m](https://github.com/GerPS0/IEEE_LatinAmerica_ID8468/blob/main/MATLAB_files/Boost_aproximation.m) Mat function with the code to generate the FOPID and fractional aproximation of Boost converter.
+2. [Buck_aproximation.m](https://github.com/GerPS0/IEEE_LatinAmerica_ID8468/blob/main/MATLAB_files/Buck_aproximation.m) Mat function with the code to generate the FOPID and fractional aproximation of Buck converter.
+3. [Main_function.m](https://github.com/GerPS0/IEEE_LatinAmerica_ID8468/blob/main/MATLAB_files/Main_function.m) Main script to set the parameters of each converter and escecute both function. Note: the parameters can be modified by user
+4. [Variables.m](https://github.com/GerPS0/IEEE_LatinAmerica_ID8468/blob/main/MATLAB_files/Variables.m) Global variables used in each Mat function.
  
 ## INSTRUCTIONS TO DESIGN THE FOPID
 ## INSTRUCTIONS TO EXECUTE A CORRECT TEST OF THE FOPID

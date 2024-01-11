@@ -12,9 +12,14 @@ THE FOLLOWING DOCUMENTATION IS A HELP TO EXECUTE AND PROBE THE RESULT OF THE IEE
 4. [Variables.m](https://github.com/GerPS0/IEEE_LatinAmerica_ID8468/blob/main/MATLAB_files/Variables.m) Global variables used in each Mat function.
  
 ## INSTRUCTIONS TO DESIGN THE FOPID
+The file Steps to FOPID controller.txt is a
+
 ## INSTRUCTIONS TO EXECUTE A CORRECT TEST OF THE FOPID
+The file Steps to implement the controller.txt is a 
 ## PSEUDO CODE TO HELP THE CODING THE FOPID IN A MICROCONTROLLER
-## LIST OF MATERIAL AND EQUIMENT 
+The file Pseudocode.txt
+## LIST OF MATERIAL AND EQUIMENT
 
-
-
+## SOFTWARE REQRUIREMENTS
+* Matlab 2018 or later
+* 

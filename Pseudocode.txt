@@ -1,0 +1,85 @@
+
+/*****************************************************************************************************
+// This pseudocode was created to illustrate the necesary code for the application shown in the
+// IEEE Latin America Transactions article titled:
+// "Fractional-Order Control for Voltage Regulation in Bidirectional Converters: An Experimental Study",
+// as the actual code was generated using PSIM Simcoder and cannot be shared.
+//
+// In the article, a Texas Instruments F280049c board was the digital device used.
+//
+// Date: January 07/01/2024
+// By Martinez-P., Parada-S., Perez-P., S.-Sanchez, Zarate-O., and Barranco-G.
+******************************************************************************************************/
+
+#include whatNeeded();
+
+// System variables definitions
+
+constant sysCLK = 100; // MHz used for experimental results
+constant vref = A; // Reference voltage for ADC
+defaulttype A,B,C,D,E... etc. // Variables definitions
+
+
+// Interruption task to calculate PWM duty cycle based on ADC reading and control function
+void interrTask1(){
+
+	DefaultType VoRef;
+	
+	ADCclr();
+	// Reference voltage for controller
+	voRef = 24.0;
+	// ADC reading function called, result scaled apropiately
+	ADC1 = ADCread(A) * (ADCVref/bitsScalingFactor) * VsensorScalingFactor;
+	// Error, negative feedback of loop
+	error = voRef - ADC1;
+
+    	// FOPID controller coeficients
+    	const numeratorArray[5] = {a,b,c,d,e}
+    	const denominatorArray[5] = {f,g,h,i,j}
+
+	// FOPID output calculation, with I/O states vector delays
+	out = numeratorArray[0]*error;
+	for i from 1 to 5
+        	out += numeratorArray[i] * inVector[i - 1] - denominatorArray[i] * outVector[i - 1];
+	// Update I/O vector
+	inVector[0] = error;
+	outVector[0] = out;
+	
+}	
+
+
+// Interruption task to update PWM duty cycle changing registers
+void interrTask2(){
+	PWMcalculated = PWMcalculated * int (AnyRequiredScalingFactor); 
+	PWMval = PWMcalculated;
+}
+
+
+// System initialization function definition
+void initialize(){
+	//Here, device specific initialization functions for peripherals shall be called
+	// and the appropiate configuration for the application must be done
+	// following are some examples of funcitons that may be required
+
+	systemInitialization(A,B,C);
+	clkInitialization(A,B,C);
+	timersInitialization(A,B,C);
+	setVoltageReference(A,B,C);
+	ADCinitialization(A,B,C);
+	PWMinitialization(A,B,C);
+	startPeripherals(A,B,C);
+}	
+
+
+// Main function section
+void main(){
+	//System initialization function
+	initialize();
+	//Interruptions enabling function
+	enableInterrupt();
+	//Debug enable, as F280049c had onboard debugger
+	enableDebug();
+	//Infinite loop
+	for(;;){
+	}	
+}

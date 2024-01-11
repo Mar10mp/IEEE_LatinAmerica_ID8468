@@ -1,0 +1,16 @@
+*.........................................................................................*
+*............These steps are created as help to execute and design the FOPID..............*
+*.........................................................................................*
+
+The files mentioned in these steps are included in the folder FOPID_Aproximation
+
+1.	Model the power converter to get the minimal phase transfer function.
+2.	Define the design parameters based on the converter topology. 
+3.	Substitute the design parameters into the minimal transfer function. 
+4.	Execute the "Main_function.mat" in MATLAB using the corresponding transfer function.
+5.	Evaluate the results in Matlab/Simulink or PSIM.
+	{
+		If the results are satified continue
+		Else return to step two
+	}
+6.	Continue to "Steps to implement the controller" file

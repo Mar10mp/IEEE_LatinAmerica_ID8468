@@ -12,18 +12,27 @@
 
 #include whatNeeded();
 
+
 // System variables definitions
 
+
 constant sysCLK = 100; // MHz used for experimental results
+
 constant vref = A; // Reference voltage for ADC
+
 defaulttype A,B,C,D,E... etc. // Variables definitions
 
 
+
 // Interruption task to calculate PWM duty cycle based on ADC reading and control function
+
 void interrTask1(){
 
+
 	DefaultType VoRef;
+
 	
+
 	ADCclr();
 	// Reference voltage for controller
 	voRef = 24.0;
@@ -37,21 +46,35 @@ void interrTask1(){
     	const denominatorArray[5] = {f,g,h,i,j}
 
 	// FOPID output calculation, with I/O states vector delays
+
 	out = numeratorArray[0]*error;
+
 	for i from 1 to 5
+
         	out += numeratorArray[i] * inVector[i - 1] - denominatorArray[i] * outVector[i - 1];
+
 	// Update I/O vector
+
 	inVector[0] = error;
+
 	outVector[0] = out;
+
 	
+
 }	
 
 
+
 // Interruption task to update PWM duty cycle changing registers
+
 void interrTask2(){
+
 	PWMcalculated = PWMcalculated * int (AnyRequiredScalingFactor); 
+
 	PWMval = PWMcalculated;
+
 }
+
 
 
 // System initialization function definition
@@ -63,21 +86,35 @@ void initialize(){
 	systemInitialization(A,B,C);
 	clkInitialization(A,B,C);
 	timersInitialization(A,B,C);
+
 	setVoltageReference(A,B,C);
+
 	ADCinitialization(A,B,C);
+
 	PWMinitialization(A,B,C);
+
 	startPeripherals(A,B,C);
+
 }	
 
 
+
 // Main function section
+
 void main(){
+
 	//System initialization function
+
 	initialize();
+
 	//Interruptions enabling function
+
 	enableInterrupt();
+
 	//Debug enable, as F280049c had onboard debugger
+
 	enableDebug();
+
 	//Infinite loop
 	for(;;){
 	}	

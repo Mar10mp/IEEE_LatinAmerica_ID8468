@@ -1,17 +1,19 @@
 *.........................................................................................*
-*............These steps are created as help to execute a experimental FOPID..............*
+*............These steps are created as help to execute an experimental FOPID.............*
 *.........................................................................................*
 
 1.	Design and manufacture the PCB of the proposed converter.
 2.	Connect the resistive load, the power supply and the oscilloscope in the corresponding inputs and outputs of the PCB.
 3.	Do an open loop test.
 {
+
 	If the converter works correctly go next.
 	Else, review the design and manufacture of the PCB.
 } 
-4.	Programing the controller show in the file “Pseudocode.txt” in any microcontroller that has PWM and ADC channels.
+4.	Program the controller shown in the file “Pseudocode.txt” in any microcontroller that has PWM and ADC channels.
 5.	Connect the ADC channels of the microcontroller in the input and output voltage of the converter.
 6.	Connect the PWM channels of the microcontroller in the Gate of the MOSFET.
 7.	Do a step response test on the Boost side.
 8.	Do a change load test on the Boost side.
-9.	Repeat step 7 and 8 with the Buck side.
+
+9. 	Repeat step 7 and 8 with the Buck side.

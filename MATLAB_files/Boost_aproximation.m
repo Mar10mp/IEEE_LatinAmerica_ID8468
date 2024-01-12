@@ -1,6 +1,6 @@
 function [Gp_Min,N_alfa,s_alfa,Kc,Ti] = Boost_aproximation(num,dem,ts,Pmd)
 global plant
-%% TF no minal Phase
+%% TF no minimal Phase
 Gp=tf(num, dem,'inputDelay',ts);
 %% Minimal Phase 
 b = num(2);
@@ -22,7 +22,7 @@ alfa=(Pmd-180-Pp)/90;
 Pc=(Pmd-180-Pp)*pi/180;
 plant.Buck.DesireParams = [Wcf, alfa, Pc];
 %% ----- Fractional Approximation -----
-a0 = abs(alfa)^alfa + 3 * alfa + 2; %Se cambio menos y mas
+a0 = abs(alfa)^alfa + 3 * alfa + 2; 
 a2 = abs(alfa)^alfa - 3 * alfa + 2;
 a1 = 6 * alfa * tan ((2 - alfa) * pi / 4);
 

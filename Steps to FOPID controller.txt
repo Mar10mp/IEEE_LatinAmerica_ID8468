@@ -1,5 +1,5 @@
 *.........................................................................................*
-*............These steps are created as help to execute and design the FOPID..............*
+*............These steps were created to help to design and simulate the FOPID............*
 *.........................................................................................*
 
 The files mentioned in these steps are included in the folder FOPID_Aproximation
@@ -10,7 +10,7 @@ The files mentioned in these steps are included in the folder FOPID_Aproximation
 4.	Execute the "Main_function.mat" in MATLAB using the corresponding transfer function.
 5.	Evaluate the results in Matlab/Simulink or PSIM.
 	{
-		If the results are satified continue
+		If the results satisfy the requirements, continue
 		Else return to step two
 	}
 6.	Continue to "Steps to implement the controller" file

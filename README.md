@@ -18,7 +18,12 @@ The file Steps to FOPID controller.txt is a
 The file Steps to implement the controller.txt is a 
 ## PSEUDO CODE TO HELP THE CODING THE FOPID IN A MICROCONTROLLER
 The file Pseudocode.txt
-## LIST OF MATERIAL AND EQUIMENT
+## LIST OF MATERIALS AND EQUIMENT
+DC Power source, at least 100W. 
+Osciloscope, 2Gs reccomended. (Used: Keysight DSOX1102A).
+Controller MCU, with at least 100KSPS ADC & PWM (Used: Texas Instrument F280042C).
+DC-DC Power electronic converter, see article for details.
+Resistive loads, see article for details.
 
 ## SOFTWARE REQRUIREMENTS
 * Matlab 2018 or later
